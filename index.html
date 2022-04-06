@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <title>JOOP</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="menuBtn">Change Background Color 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdownItems">
+                <a href="#" onclick="changeColor('orange');">Orange</a>
+                <a href="#" onclick="changeColor('yellow');">Yellow</a>
+                <a href="#" onclick="changeColor('red');">Red</a>
+                <a href="#" onclick="changeColor('#ed731b');">Default</a>
+            </div>
+        </div>
+    </div>
+    <div class="heroContainer">
+        <div class="quotation" id="headerSection">
+            <h1 class="title">
+              Draai jij aan de juiste knoppen van jouw onderneming?
+            </h1>
+            <p class="subTitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. psum dolor
+              sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="quoteMark">
+            <img class="chatTriangle" src="./assets/levels.png" alt="Chat Icon"/>
+        </div>
+        <div class="services">
+            <div class="advies">
+                <h1 class="heading">Advies</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis<br/>
+                  saepe iusto fuga quibusdam ut!
+                </p>
+                <button class="btn btn-default" type="button">Lees meer</button>
+            </div>
+            <div class="administratie">
+                <h1 class="heading">Administratie</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis<br/>
+                  saepe iusto fuga quibusdam ut
+                </p>
+                <button class="btn btn-default" type="button">Lees meer</button>
+            </div>
+            <div class="avatar">
+                <img src="./assets/icon.svg" alt="" />
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

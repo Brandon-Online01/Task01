@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "URW Franklin Gothic W01 Demi";
+  src: url("../assets/fonts/74160cd2f61c87c65fe1f1b45412bf2.eot"); /* IE9*/
+  src: url("../assets/fonts/174160cd2f61c87c65fe1f1b45412bf2.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/174160cd2f61c87c65fe1f1b45412bf2.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../assets/fonts/174160cd2f61c87c65fe1f1b45412bf2.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../assets/fonts/174160cd2f61c87c65fe1f1b45412bf2.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../assets/fonts/174160cd2f61c87c65fe1f1b45412bf2.svg#URW Franklin Gothic W01 Demi")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "URW Franklin Gothic W02 Medium";
+  src: url("../assets/fonts/e5d82a158dd9527c9fa282b24d344396.eot"); /* IE9*/
+  src: url("../assets/fonts/e5d82a158dd9527c9fa282b24d344396.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/e5d82a158dd9527c9fa282b24d344396.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../assets/fonts/e5d82a158dd9527c9fa282b24d344396.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../assets/fonts/e5d82a158dd9527c9fa282b24d344396.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../assets/fonts/e5d82a158dd9527c9fa282b24d344396.svg#URW Franklin Gothic W02 Medium")
+      format("svg"); /* iOS 4.1- */
+}
+@font-face {
+  font-family: "URW Franklin Gothic W02 Light";
+  src: url("../assets/fonts/79b725e00ebb1fbe198589946c99b048.eot"); /* IE9*/
+  src: url("../assets/fonts/79b725e00ebb1fbe198589946c99b048.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/79b725e00ebb1fbe198589946c99b048.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../assets/fonts/79b725e00ebb1fbe198589946c99b048.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../assets/fonts/79b725e00ebb1fbe198589946c99b048.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../assets/fonts/79b725e00ebb1fbe198589946c99b048.svg#URW Franklin Gothic W02 Light")
+      format("svg"); /* iOS 4.1- */
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #ed731b;
+  padding: 1em;
+  font-family: "URW Franklin Gothic W01 Demi";
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin: 0 4em 0 0;
+}
+.dropdown .menuBtn {
+  font-size: clamp(14px, 1.25vw, 25px);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .menuBtn {
+  background-color: red;
+}
+.dropdownItems {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 288px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdownItems a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 0 3em 0 0;
+}
+.dropdownItems a:hover {
+  background-color: #ddd;
+  width: 100%;
+}
+.dropdown:hover .dropdownItems {
+  display: block;
+}
+.heroContainer {
+  padding: 5em;
+}
+.quotation {
+  background-color: #ed731b;
+  padding: 4em;
+  text-align: center;
+}
+.title {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 700;
+  font-family: "URW Franklin Gothic W01 Demi";
+  text-align: center;
+  margin: 0 auto;
+}
+.subTitle {
+  font-size: clamp(20px, 1.25vw, 30px);
+  font-family: "URW Franklin Gothic W02 Medium";
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
+.quoteMark {
+  float: right;
+  position: relative;
+}
+.chatTriangle {
+  width: 30%;
+  z-index: -2;
+  margin: 0 -350px 0 0;
+}
+
+.services {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.advies {
+  border-right: 4px solid #ed731b;
+  width: 45%;
+}
+.administratie {
+  padding: 0 0 0 2em;
+  width: 45%;
+}
+.heading {
+  font-family: "URW Franklin Gothic W01 Demi";
+  font-size: 58px;
+}
+.administratie p,
+.advies p {
+  font-family: "URW Franklin Gothic W02 Light";
+  font-size: 20px;
+  line-height: 1.4em;
+}
+.avatar {
+  width: 10%;
+}
+.avatar img {
+  float: right;
+}
+.btn-default {
+  border: 2px solid #ed731b;
+  padding: 1em 3em 1em 3em;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "URW Franklin Gothic W02 Medium";
+  letter-spacing: 1px;
+}
+.btn-default:hover {
+  background-color: #ed731b;
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 24px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heroContainer {
+    padding: 1em;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .quoteMark {
+    float: right !important;
+    position: relative;
+  }
+  .chatTriangle {
+    float: right !important;
+    width: 20%;
+    z-index: -2;
+    margin: -1em 4em 0 0;
+  }
+  .services {
+    flex-direction: column-reverse;
+    margin: 5em 0 0 0 !important;
+  }
+  .advies,
+  .administratie {
+    width: 100%;
+  }
+  .advies {
+    border-right: 0;
+  }
+  .administratie {
+    padding: 0 !important;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .avatar {
+    width: 100%;
+  }
+  .avatar img {
+    float: right !important;
+    margin: 1em 0 0 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1210px) {
+  .quoteMark {
+    float: right !important;
+    position: relative;
+  }
+  .chatTriangle {
+    float: right !important;
+    width: 10%;
+    z-index: -2;
+    margin: -1em 7em 0 0;
+  }
+  .advies,
+  .administratie {
+    width: 33.33% !important;
+  }
+  .advies {
+    border-right: 0;
+  }
+  .administratie {
+    padding: 0 !important;
+  }
+  .heading {
+    font-size: 45px;
+  }
+  .avatar {
+    width: 33.33%;
+  }
+  .avatar img {
+    float: right !important;
+    margin: 1em 0 0 0;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .chatTriangle {
+    float: right !important;
+    width: 10%;
+    z-index: -2;
+    margin: -1em 6em 0 0;
+  }
+  .avatar img {
+    float: right !important;
+    margin: 1em 0 0 0;
+  }
+}
